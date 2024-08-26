@@ -1,29 +1,11 @@
-/**
- * MIT License
-
-Copyright (c) 2017 deepakshajan
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
- */
-
 @CHARSET "ISO-8859-1";
-
+body{
+	background: url(https://wallpapercave.com/wp/vckf4oR.jpg);
+	background-repeat:no-repeat;
+	background-size: cover; 
+    background-position: center;
+	background-attachment: fixed;
+}
 .cwp_container {
 	position: relative;
 	width: 100%;
@@ -44,9 +26,11 @@ SOFTWARE.
 .cwp_q_container {
 	display: inline-block;
 	position: absolute;
-	width: 39%;
+	width: 50%;
 	height: 600px;
-	left: 45%;
+	left: 40%;
+	color:rgb(230, 23, 230);
+	font-size: 18px;
 }
 
 .cwp_b_container {
@@ -58,8 +42,34 @@ SOFTWARE.
 	width: 550px;
 }
 
+/* Style for "Check Solution/Finish" button */
+#cwp_b_finish {
+    background-color: green;
+    color: white;
+    border: none;
+    padding-top: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+	font-weight: bold;
+}
+
+/* Style for "Clear All/Reset" button */
+#cwp_b_clear {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+	font-weight: bold;
+
+}
+
+
 .cwp_h2_main {
-	color: graytext;
+	color: black;
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
@@ -79,6 +89,8 @@ SOFTWARE.
 
 .cwp_q_span {
 	position: relative;
+	color:black;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .cwp_b_button {
